@@ -39,7 +39,7 @@ jobs:
       env:
         TNAME: 
       run: |
-        cd /opt/asuswrt_k2p
+        cd ~/asuswrt_k2p
         sudo ./build
         sudo mv -f /opt/asuswrt_k2p/release/src-ra-5010/*.trx /opt/images/
     - name : Upload packages
