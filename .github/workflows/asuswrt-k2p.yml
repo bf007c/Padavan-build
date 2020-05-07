@@ -39,7 +39,7 @@ jobs:
       env:
         TNAME: 
       run: |
-        cd asuswrt_k2p
+        cd /opt/asuswrt_k2p
         sudo ./build
         sudo mv -f images/*.trx /opt/images/
     - name : Upload packages
@@ -47,4 +47,4 @@ jobs:
       if: always()
       with:
         name: asuswrt-packages
-        path: /opt/
+        path: /opt/images
