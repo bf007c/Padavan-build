@@ -1,4 +1,4 @@
-name: Build asuswrt
+name: Build 1200
 
 on: 
   release:
